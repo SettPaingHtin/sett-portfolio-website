@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Github, Linkedin, Mail,
   Menu, X, Code2, Layers3, Sparkles, Database,
-  Activity, CheckCircle2
+  CheckCircle2
 } from 'lucide-react'
 
 type Project = {
