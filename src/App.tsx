@@ -56,7 +56,7 @@ const projects: Project[] = [
     name: 'FinQuantum Dashboard',
     category: 'FULL-STACK DEVELOPMENT / INTERNSHIP',
     description: 'Improved a reporting dashboard and helped translate product requirements into practical full-stack features.',
-    stack: ['TypeScript', 'Remix', 'React', 'MongoDB'],
+    stack: ['Javascript', 'TypeScript', 'Remix', 'React', 'MongoDB'],
     icon: Database,
     accent: 'blue',
     status: 'Internship',
@@ -71,9 +71,10 @@ const projects: Project[] = [
 
 const skills = [
   { label: 'Languages', items: ['C++', 'Python', 'TypeScript', 'JavaScript', 'Java', 'C#'] },
-  { label: 'Frontend', items: ['React', 'Remix', 'HTML / CSS', 'UI / UX Design'] },
-  { label: 'Backend & Data', items: ['REST APIs', 'MongoDB', 'Server-side caching', 'Database indexing'] },
-  { label: 'Tools & Workflow', items: ['Git', 'Code reviews', 'Documentation', 'AWS fundamentals'] },
+  { label: 'Frameworks & Libraries', items: ['React', 'Remix', 'FastAPI', 'Unity'] },
+  { label: 'Databases & Caching', items: ['MongoDB', 'PostgreSQL', 'Redis'] },
+  { label: 'DevOps & Infrastructure', items: ['GitHub Actions', 'Docker', 'AWS'] },
+  { label: 'Developer Tools', items: ['Git', 'GitHub', 'VS Code', 'Linux'] },
 ]
 
 function App() {
@@ -129,11 +130,11 @@ function App() {
             <div className="hero-meta">
               <div className="meta-item"><span className="meta-label">BASED IN</span><span>San Jose, California</span></div>
               <div className="meta-divider" />
-              <div className="meta-item"><span className="meta-label">EDUCATION</span><span>UC Santa Cruz · CS</span></div>
+              <div className="meta-item"><span className="meta-label">EDUCATION</span><span>UC Santa Cruz · Computer Science: Game Design</span></div>
             </div>
           </div>
           <div className="hero-visual" aria-label="Profile photo and developer illustration">
-            <div className="profile-photo-frame"><img src="/sett-profile.JPG" alt="Sett Paing Htin at the coast" className="profile-photo" /><span className="photo-caption">SETT PAING HTIN <i /> SOFTWARE ENGINEER</span></div>
+            <div className="profile-photo-frame"><img src="/sett-profile.JPG" alt="Sett Paing Htin at the coast" className="profile-photo" /></div>
             <div className="visual-grid" />
             <div className="orbit orbit-outer" />
             <div className="orbit orbit-inner" />
@@ -158,10 +159,10 @@ function App() {
                 <div><span className="line-no">09</span>&nbsp;&nbsp;buildSomethingUseful()</div>
                 <div><span className="line-no">10</span>{'}'}<span className="cursor" /></div>
               </div>
-              <div className="window-footer"><span><span className="tiny-green" /> All systems curious</span><span>UTF-8&nbsp;&nbsp; TypeScript</span></div>
+              <div className="window-footer"><span><span className="tiny-green" /> All systems operational</span><span>UTF-8&nbsp;&nbsp; TypeScript</span></div>
             </div>
-            <div className="floating-chip chip-top"><Code2 size={14} /> Thoughtful code</div>
-            <div className="floating-chip chip-bottom"><Activity size={14} /> Iteration over assumption</div>
+            
+            
           </div>
           <a href="#work" className="scroll-cue"><span /> SCROLL TO EXPLORE</a>
         </section>
@@ -190,12 +191,12 @@ function App() {
                   <h3>{project.name}</h3>
                   <p className="project-description">{project.description}</p>
                   <div className="tag-list">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  <button className="project-link" onClick={() => setActiveProject(project)}>{project.status === 'Internship' ? 'Preview unavailable — NDA' : 'View project overview'} <ArrowUpRight size={15} /></button>
+                  <button className="project-link" onClick={() => setActiveProject(project)}>{project.status === 'Internship' ? 'View project overview' : 'View project overview'} <ArrowUpRight size={15} /></button>
                 </article>
               )
             })}
           </div>
-          <p className="project-note"><span>*</span> AI Reliability Lab and TaskForge are in-progress projects. Planned features are labeled as such; details will be updated as implementation progresses.</p>
+          <p className="project-note"><span>*</span> AI Reliability Lab and TaskForge are in-progress projects. Planned features are labeled as such, details will be updated as implementation progresses.</p>
         </section>
 
         <section className="about-section section-wrap" id="about">
@@ -248,7 +249,7 @@ function App() {
               <button className="button button-primary" onClick={copyEmail}><Mail size={16} /> {copied ? 'Email copied' : 'Copy email address'} <ArrowUpRight size={15} /></button>
               <a className="button button-quiet" href={`mailto:${email}`}>Send an email <ArrowRight size={15} /></a>
             </div>
-            <div className="contact-placeholder">Replace <code>your.email@example.com</code> with your preferred contact email before publishing.</div>
+            
           </div>
         </section>
       </main>
@@ -258,7 +259,7 @@ function App() {
         <span className="footer-copy">Designed & built with care <span>© 2026</span></span>
         <div className="social-links">
           <a href="https://github.com/SettPaingHtin" target="_blank" rel="noreferrer" aria-label="GitHub profile"><Github size={17} /></a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile (replace with your profile)"><Linkedin size={17} /></a>
+          <a href="https://www.linkedin.com/in/settpainghtin" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><Linkedin size={17} /></a>
           <a href={`mailto:${email}`} aria-label="Email"><Mail size={17} /></a>
         </div>
       </footer>
